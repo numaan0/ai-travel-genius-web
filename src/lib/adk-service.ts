@@ -46,7 +46,7 @@ export const adkService = {
   async getSession() {
     try {
       const response = await axios.post(
-        `http://localhost:8000/apps/agent/users/u_123/sessions/s_123`,
+        `https://travel-service-308693249359.us-central1.run.app/apps/agent/users/u_123/sessions/s_123`,
         { state: { key1: "value1", key2: 42 } },
         { headers: { 'Content-Type': 'application/json' } }
       );
